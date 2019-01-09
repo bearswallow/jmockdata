@@ -1,4 +1,4 @@
-package com.github.jsonzou.jmockdata.mocker;
+package com.github.jsonzou.jmockdata.mocker.tianmi;
 
 import com.github.jsonzou.jmockdata.DataConfig;
 import com.github.jsonzou.jmockdata.Mocker;
@@ -9,8 +9,7 @@ public class LocalDateMocker implements Mocker<LocalDate> {
 
     @Override
     public LocalDate mock(DataConfig mockConfig) {
-        String[] dateRange = mockConfig.dateRange();
-        return null;
+        return LocalDateTimeMocker.generate(mockConfig).toLocalDate();
     }
 
 }

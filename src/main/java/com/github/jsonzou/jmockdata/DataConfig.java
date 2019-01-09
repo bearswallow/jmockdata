@@ -12,10 +12,10 @@ public class DataConfig {
     private byte[] byteRange = {0, 127};
     private boolean[] booleanSeed = {true, false};
     private short[] shortRange = {0, 1000};
-    private int[] intRange = {0, 10000};
-    private float[] floatRange = {0.0f, 10000.00f};
-    private double[] doubleRange = {0.0, 10000.00};
-    private long[] longRange = {0L, 10000L};
+    private int[] intRange = {0, 1_000_000_000};
+    private float[] floatRange = {0.0f, 1_000_000_000.00f};
+    private double[] doubleRange = {0.0, 1_000_000_000.00};
+    private long[] longRange = {0L, 1_000_000_000L};
     private String[] dateRange = {"1970-01-01", "2100-12-31"};
     private int[] sizeRange = {1, 10};
 
