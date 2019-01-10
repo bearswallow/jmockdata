@@ -3,12 +3,8 @@ package com.github.jsonzou.jmockdata;
 
 import com.github.jsonzou.jmockdata.annotation.MockIgnore;
 import com.github.jsonzou.jmockdata.mocker.*;
-import com.github.jsonzou.jmockdata.mocker.tianmi.LocalDateMocker;
-import com.github.jsonzou.jmockdata.mocker.tianmi.LocalDateTimeMocker;
-import com.github.jsonzou.jmockdata.mocker.tianmi.RMBMoneyMocker;
 import com.github.jsonzou.jmockdata.util.FieldMatchingResolver;
 import com.github.jsonzou.jmockdata.util.Xeger;
-import com.tianmi.base.type.number.RMBMoney;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -38,7 +34,6 @@ public class MockConfig {
     private static final DateMocker DATE_MOCKER = new DateMocker();
     private static final LocalDateTimeMocker LOCAL_DATE_TIME_MOCKER = new LocalDateTimeMocker();
     private static final LocalDateMocker LOCAL_DATE_MOCKER = new LocalDateMocker();
-    private static final RMBMoneyMocker RMB_MONEY_MOCKER = new RMBMoneyMocker();
     private boolean enabledCircle = false;
 
     /**
@@ -88,8 +83,6 @@ public class MockConfig {
         registerMocker(DATE_MOCKER, Date.class);
         registerMocker(LOCAL_DATE_MOCKER, LocalDate.class);
         registerMocker(LOCAL_DATE_TIME_MOCKER, LocalDateTime.class);
-
-        registerMocker(RMB_MONEY_MOCKER, RMBMoney.class);
     }
 
     /**

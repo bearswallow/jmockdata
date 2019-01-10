@@ -3,7 +3,6 @@ package com.github.jsonzou.jmockdata.bean;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.github.jsonzou.jmockdata.annotation.MockIgnore;
 import com.github.jsonzou.jmockdata.bean.enums.DayEnum;
-import com.tianmi.base.type.number.RMBMoney;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -82,7 +81,6 @@ public class BasicBean {
     //其他常用类型
     @MockIgnore
     private BigDecimal bigDecimal;
-    private RMBMoney rmbMoney;
     private BigInteger bigInteger;
     @JSONField(format = "yyyy-MM-dd")
     private Date date;
@@ -95,7 +93,6 @@ public class BasicBean {
     @MockIgnore
     private BigDecimal[] bigDecimalArray;
     private BigInteger[] bigIntegerArray;
-    private RMBMoney[] rmbMoneyArray;
     private Date[] dateArray;
     private LocalDate[] localDateArray;
     private LocalDateTime[] localDateTimeArray;
@@ -105,7 +102,6 @@ public class BasicBean {
     @MockIgnore
     private BigDecimal[][] bigDecimalDoubleArray;
     private BigInteger[][] bigIntegerDoubleArray;
-    private RMBMoney[][] rmbMoneyDoubleArray;
     private Date[][] dateDoubleArray;
     private LocalDate[][] localDateDoubleArray;
     private LocalDateTime[][] localDateTimeDoubleArray;
@@ -143,7 +139,6 @@ public class BasicBean {
     private List<Double> doubleBoxingList;
     private List<BigDecimal> bigDecimalList;
     private List<BigInteger> bigIntegerList;
-    private List<RMBMoney> rmbMoneyList;
     private List<Date> dateList;
     private List<LocalDate> localDateList;
     private List<LocalDateTime> localDateTimeList;
@@ -177,7 +172,6 @@ public class BasicBean {
     private List<Double[][]> doubleBoxingDoubleArrayList;
     private List<BigDecimal[][]> bigDecimalDoubleArrayList;
     private List<BigInteger[][]> bigIntegerDoubleArrayList;
-    private List<RMBMoney[][]> rmbMoneyDoubleArrayList;
     private List<Date[][]> dateDoubleArrayList;
     private List<LocalDate[][]> localDateDoubleArrayList;
     private List<LocalDateTime[][]> localDateTimeDoubleArrayList;
@@ -194,7 +188,6 @@ public class BasicBean {
     private Set<Double> doubleBoxingSet;
     private Set<BigDecimal> bigDecimalSet;
     private Set<BigInteger> bigIntegerSet;
-    private Set<RMBMoney> rmbMoneySet;
     private Set<Date> dateSet;
     private Set<LocalDate> localDateSet;
     private Set<LocalDateTime> localDateTimeSet;
@@ -214,7 +207,6 @@ public class BasicBean {
     private Set<Double[]> doubleBoxingArraySet;
     private Set<BigDecimal[]> bigDecimalArraySet;
     private Set<BigInteger[]> bigIntegerArraySet;
-    private Set<RMBMoney[]> rmbMoneyArraySet;
     private Set<Date[]> dateArraySet;
     private Set<LocalDate[]> localDateArraySet;
     private Set<LocalDateTime[]> localDateTimeArraySet;
@@ -231,7 +223,6 @@ public class BasicBean {
     private Set<Double[][]> doubleBoxingDoubleArraySet;
     private Set<BigDecimal[][]> bigDecimalDoubleArraySet;
     private Set<BigInteger[][]> bigIntegerDoubleArraySet;
-    private Set<RMBMoney[][]> rmbMoneyDoubleArraySet;
     private Set<Date[][]> dateDoubleArraySet;
     private Set<LocalDate[][]> localDateDoubleArraySet;
     private Set<LocalDateTime[][]> localDateTimeDoubleArraySet;
@@ -247,6 +238,5 @@ public class BasicBean {
     private Map<List<String>[], Map<String, Integer>[]> keyArrayListValueArrayMapMap;
     private Map<String, LocalDate> localDateMap;
     private Map<String, LocalDateTime> localDateTimeMap;
-    private Map<String, RMBMoney> rmbMoneyMap;
 
 }

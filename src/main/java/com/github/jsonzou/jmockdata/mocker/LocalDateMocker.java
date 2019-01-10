@@ -1,4 +1,4 @@
-package com.github.jsonzou.jmockdata.mocker.tianmi;
+package com.github.jsonzou.jmockdata.mocker;
 
 import com.github.jsonzou.jmockdata.DataConfig;
 import com.github.jsonzou.jmockdata.Mocker;
